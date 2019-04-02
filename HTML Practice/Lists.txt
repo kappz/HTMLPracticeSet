@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Lists</title>
+  </head>
+    <body>
+    <h1>Scrambled Eggs</h1>
+    <p> Eggs are one of my favorite foods. Here is a recipe for deliciously rich scrambled eggs.</p>
+    <h2>Ingredients</h2>
+    <ul>
+      <li>2 eggs</li>
+      <li>itbs butter</li>
+      <li>2tbs cream<li>
+    <ul>
+    <h2>Method</h2>
+    <ol>
+      <li>Melt butter in frying pan over a medium heat</li>
+      <li>Gently mix the eggs and cream in a bowl</li>
+      <li>Once butter has melted add cream and eggs</li>
+      <li>Using a spatula fold the egges from the edge of the pant to center every 20 seconds</li>
+      <li>When the eggs are still moist remove from the heat</li>
+    </ol>
+  </body>
+<html>
