@@ -32,5 +32,10 @@ namespace HashTableProject
         {
             return key % size;
         }
+
+        public void Put(int key, int value)
+        {
+            table[Hash(key)] = value;
+        }
     }
 }

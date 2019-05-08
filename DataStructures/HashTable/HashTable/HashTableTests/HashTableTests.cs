@@ -30,5 +30,13 @@ namespace HashTableProjectTests
         {
             Assert.AreEqual(1234, hashTable.Hash(1234));
         }
+
+        [Test]
+        public void HashTableInsertsValueAtCorrectIndex()
+        {
+            hashTable.Put(888777, 100);
+
+            Assert.AreEqual(100, hashTable.Get(888777));
+        }
     }
 }
