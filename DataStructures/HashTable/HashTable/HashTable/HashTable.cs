@@ -37,5 +37,10 @@ namespace HashTableProject
         {
             table[Hash(key)] = value;
         }
+
+        public void Remove(int key)
+        {
+            table[Hash(key)] = -1;
+        }
     }
 }

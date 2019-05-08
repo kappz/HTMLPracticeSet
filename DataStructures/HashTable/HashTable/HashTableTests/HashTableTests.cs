@@ -38,5 +38,13 @@ namespace HashTableProjectTests
 
             Assert.AreEqual(100, hashTable.Get(888777));
         }
+
+        [Test]
+        public void HashTableRemovesValueAtCorrectIndex()
+        {
+            hashTable.Put(432765, 300);
+            hashTable.Remove(432765);
+            Assert.AreEqual(-1, hashTable.Get(432765));
+        }
     }
 }
