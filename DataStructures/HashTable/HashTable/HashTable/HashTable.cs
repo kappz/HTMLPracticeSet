@@ -22,5 +22,10 @@ namespace HashTableProject
         {
             return size;
         }
+
+        public int get(int key)
+        {
+            return table[key];
+        }
     }
 }
