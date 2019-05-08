@@ -22,7 +22,15 @@ namespace HashTableProjectTests
         {
             HashTable hashTable = new HashTable(1333333);
 
-            Assert.AreEqual(-1, hashTable.get(1337));
+            Assert.AreEqual(-1, hashTable.Get(1337));
+        }
+
+        [Test]
+        public void HashTableCorrectlyHashesKeyIntoValue()
+        {
+            HashTable hashTable = new HashTable(1333333);
+
+            Assert.AreEqual(1234, hashTable.Hash(1234));
         }
     }
 }

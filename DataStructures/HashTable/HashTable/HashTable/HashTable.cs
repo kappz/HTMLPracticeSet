@@ -23,9 +23,14 @@ namespace HashTableProject
             return size;
         }
 
-        public int get(int key)
+        public int Get(int key)
         {
             return table[key];
+        }
+
+        public int Hash(int key)
+        {
+            return key % size;
         }
     }
 }
