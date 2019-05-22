@@ -12,4 +12,8 @@ public class TreeNode {
     public int getKey() {
         return key;
     }
+
+    public void setKey(int value) {
+        key = value;
+    }
 }

@@ -19,7 +19,7 @@ class BinaryTreeTest {
     }
 
     @Test
-    void BinaryTreeInsert_InsertChildofRoot() {
+    void BinaryTreeInsert_InsertChildOfRoot() {
         binaryTree.insert(5);
         binaryTree.insert(7);
         assertEquals(true, binaryTree.find(7));
@@ -54,4 +54,38 @@ class BinaryTreeTest {
         binaryTree.insert(9);
         assertEquals(false, binaryTree.find(11));
     }
+
+    @Test
+    void BinaryTreeDelete_DeletesLeaf() {
+        binaryTree.insert(9);
+        binaryTree.insert(7);
+        binaryTree.delete(7);
+        assertEquals(false, binaryTree.find(7));
+    }
+
+    @Test
+    void BinaryTreeDelete_DeleteTreeNodeWithOneChild() {
+        binaryTree.insert(9);
+        binaryTree.insert(7);
+        binaryTree.insert(13);
+        binaryTree.insert(6);
+        binaryTree.delete(7);
+        assertEquals(false, binaryTree.find(7));
+        assertEquals(true, binaryTree.find(6));
+    }
+
+    @Test
+    void BinaryTreeDelete_DeleteTreeNodeWithTwoChild() {
+        binaryTree.insert(12);
+        binaryTree.insert(7);
+        binaryTree.insert(13);
+        binaryTree.insert(6);
+        binaryTree.insert(11);
+        binaryTree.insert(10);
+        binaryTree.insert(9);
+        binaryTree.delete(7);
+        assertEquals(false, binaryTree.find(7));
+        assertEquals(true, binaryTree.find(9));
+    }
+
 }

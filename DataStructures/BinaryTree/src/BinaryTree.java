@@ -1,10 +1,15 @@
 import com.sun.org.apache.xpath.internal.operations.Bool;
+import sun.reflect.generics.tree.Tree;
 
 public class BinaryTree {
     private TreeNode root;
 
     BinaryTree() {
         root = null;
+    }
+
+    public TreeNode getRoot() {
+        return root;
     }
 
     public void insert(int value) {
@@ -15,10 +20,7 @@ public class BinaryTree {
             insertRecursion(root, value);
         }
     }
-    private TreeNode createTreeNode(int value) {
-        TreeNode node = new TreeNode(value);
-        return node;
-    }
+
     private TreeNode insertRecursion(TreeNode currentNode, int value) {
         if (currentNode == null) {
             currentNode = new TreeNode((value));
@@ -28,6 +30,43 @@ public class BinaryTree {
         }
         else if (currentNode.getKey() < value) {
             currentNode.right = insertRecursion(currentNode.right, value);
+        }
+
+        return currentNode;
+    }
+
+    public void delete(int value) {
+            deleteRecursion(root, value);
+    }
+
+    private TreeNode deleteRecursion(TreeNode currentNode, int value) {
+        int smallestValue;
+
+        if (root == null) {
+            return currentNode;
+        }
+
+        if (currentNode.getKey() == value) {
+            if (currentNode.left == null && currentNode.right == null) {
+                return null;
+            }
+            if (currentNode.left == null) {
+                return currentNode.right;
+            }
+            else if (currentNode.right == null) {
+                return currentNode.left;
+            }
+            else {
+                smallestValue = findSmallestValue(currentNode.right);
+                currentNode.setKey(smallestValue);
+                currentNode.right = deleteRecursion(currentNode.right, smallestValue);
+            }
+        }
+        else if (currentNode.getKey() > value) {
+            currentNode.left = deleteRecursion(currentNode.left, value);
+        }
+        else if (currentNode.getKey() < value) {
+            currentNode.right = deleteRecursion(currentNode.right, value);
         }
 
         return currentNode;
@@ -56,16 +95,27 @@ public class BinaryTree {
     }
 
     public void print() {
-        printTree(root);
+        printRecursion(root);
     }
 
-    private void printTree(TreeNode currentNode) {
+    private void printRecursion(TreeNode currentNode) {
         if (currentNode == null) {
             return;
         }
 
-        printTree(currentNode.left);
+        printRecursion(currentNode.left);
         System.out.print(currentNode.getKey() + " ");  // Move before/after recursive calls to change traversal type.
-        printTree(currentNode.right);
+        printRecursion(currentNode.right);
+    }
+
+    private TreeNode createTreeNode(int value) {
+        TreeNode node = new TreeNode(value);
+        return node;
+    }
+    private int findSmallestValue(TreeNode currentNode) {
+        if (currentNode.left == null) {
+            return currentNode.getKey();
+        }
+        return findSmallestValue(currentNode.left);
     }
 }
