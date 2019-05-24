@@ -1,5 +1,6 @@
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import java.util.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -86,6 +87,42 @@ class BinaryTreeTest {
         binaryTree.delete(7);
         assertEquals(false, binaryTree.find(7));
         assertEquals(true, binaryTree.find(9));
+    }
+
+    @Test
+    void BinaryTreeTraverse_CorrectlyOrdersInOrderTraversal() {
+        Vector<Integer> expected = new Vector<Integer>();
+        Vector<Integer> actual;
+        expected.add(6);
+        expected.add(7);
+        expected.add(8);
+        expected.add(9);
+        expected.add(13);
+        binaryTree.insert(9);
+        binaryTree.insert(7);
+        binaryTree.insert(13);
+        binaryTree.insert(6);
+        binaryTree.insert(8);
+        actual = binaryTree.traverse("inorder");
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    void BinaryTreeTraverse_CorrectlyOrdersPostOrderTraversal() {
+        Vector<Integer> expected = new Vector<Integer>();
+        Vector<Integer> actual;
+        expected.add(6);
+        expected.add(8);
+        expected.add(7);
+        expected.add(13);
+        expected.add(9);
+        binaryTree.insert(9);
+        binaryTree.insert(7);
+        binaryTree.insert(13);
+        binaryTree.insert(6);
+        binaryTree.insert(8);
+        actual = binaryTree.traverse("postorder");
+        assertEquals(expected, actual);
     }
 
 }

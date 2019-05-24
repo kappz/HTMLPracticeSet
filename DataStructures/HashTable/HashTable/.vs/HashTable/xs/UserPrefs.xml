@@ -1,14 +1,15 @@
 ﻿<Properties StartupConfiguration="{E7D0F605-1803-402E-BD7D-8945A6B8C102}|Default">
-  <MonoDevelop.Ide.ItemProperties.HashTableTests FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.HashTableTests PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="HashTableTests/HashTableTests.cs">
     <Files>
-      <File FileName="HashTable/Class1.cs" Line="1" Column="1" />
-      <File FileName="HashTableTests/HashTableTests.cs" Line="9" Column="10" />
+      <File FileName="HashTable/HashTable.cs" Line="7" Column="25" />
+      <File FileName="HashTableTests/HashTableTests.cs" Line="47" Column="56" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="HashTable" expanded="True">
+            <Node name="HashTableProject" expanded="True" />
             <Node name="HashTableTests" expanded="True">
               <Node name="HashTableTests.cs" selected="True" />
             </Node>
@@ -23,7 +24,6 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.HashTableProject FirstBuild="True" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

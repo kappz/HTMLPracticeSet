@@ -1,5 +1,6 @@
 import com.sun.org.apache.xpath.internal.operations.Bool;
 import sun.reflect.generics.tree.Tree;
+import java.util.*;
 
 public class BinaryTree {
     private TreeNode root;
@@ -94,18 +95,29 @@ public class BinaryTree {
         return keyFound;
     }
 
-    public void print() {
-        printRecursion(root);
+    public Vector<Integer> traverse(String traverseType) {
+        Vector<Integer> traverse = new Vector<Integer>();
+
+        traverseType.toLowerCase();
+        traverseRecursion(root, traverse, traverseType);
+        return traverse;
     }
 
-    private void printRecursion(TreeNode currentNode) {
+    private void traverseRecursion(TreeNode currentNode, Vector<Integer> traverse, String traverseType) {
         if (currentNode == null) {
             return;
         }
-
-        printRecursion(currentNode.left);
-        System.out.print(currentNode.getKey() + " ");  // Move before/after recursive calls to change traversal type.
-        printRecursion(currentNode.right);
+        if (traverseType == "preorder") {
+            traverse.add(currentNode.getKey());
+        }
+        traverseRecursion(currentNode.left, traverse, traverseType);
+        if (traverseType == "inorder") {
+            traverse.add(currentNode.getKey());
+        }
+        traverseRecursion(currentNode.right, traverse, traverseType);
+        if (traverseType == "postorder") {
+            traverse.add(currentNode.getKey());
+        }
     }
 
     private TreeNode createTreeNode(int value) {

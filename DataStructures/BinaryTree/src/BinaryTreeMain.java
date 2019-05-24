@@ -7,6 +7,8 @@ public class BinaryTreeMain {
         binaryTree.insert(6);
         binaryTree.insert(8);
 
-        binaryTree.print();
+        binaryTree.traverse("preorder");
+        binaryTree.traverse("inorder");
+        binaryTree.traverse("postorder");
     }
 }

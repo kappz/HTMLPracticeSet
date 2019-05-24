@@ -2,9 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f627641-8714-4aff-a360-cfad1611075c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BinaryTree.iml" beforeDir="false" afterPath="$PROJECT_DIR$/BinaryTree.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tests/BinaryTreeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/BinaryTreeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BinaryTree/BinaryTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BinaryTree/BinaryTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BinaryTree/BinaryTreeMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BinaryTree/BinaryTreeMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/BinaryTree/BinaryTreeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/BinaryTree/BinaryTreeTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TreeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinaryTreeMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryTreeMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HashTable/HashTable/.vs/HashTable/xs/UserPrefs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HashTable/HashTable/.vs/HashTable/xs/UserPrefs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HashTable/HashTable/.vs/HashTable/xs/sqlite3/storage.ide" beforeDir="false" afterPath="$PROJECT_DIR$/../HashTable/HashTable/.vs/HashTable/xs/sqlite3/storage.ide" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HashTable/HashTable/HashTableTests/bin/Debug/netcoreapp2.1/nunit_random_seed.tmp" beforeDir="false" afterPath="$PROJECT_DIR$/../HashTable/HashTable/HashTableTests/bin/Debug/netcoreapp2.1/nunit_random_seed.tmp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,50 +21,53 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="BinaryTree" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TreeNode.java">
+        <entry file="file://$PROJECT_DIR$/src/BinaryTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+            <state relative-caret-position="-1433">
+              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
               <folding>
-                <element signature="e#206#207#0" expanded="true" />
-                <element signature="e#232#233#0" expanded="true" />
-                <element signature="e#264#265#0" expanded="true" />
-                <element signature="e#290#291#0" expanded="true" />
+                <element signature="e#169#170#0" expanded="true" />
+                <element signature="e#196#197#0" expanded="true" />
+                <element signature="e#229#230#0" expanded="true" />
+                <element signature="e#256#257#0" expanded="true" />
+                <element signature="e#2128#2129#0" expanded="true" />
+                <element signature="e#2177#2178#0" expanded="true" />
+                <element signature="e#2791#2800#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BinaryTreeMain.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/BinaryTree.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="59" column="67" selection-start-line="59" selection-start-column="67" selection-end-line="59" selection-end-column="67" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#130#131#0" expanded="true" />
-                <element signature="e#157#158#0" expanded="true" />
-                <element signature="e#229#230#0" expanded="true" />
-                <element signature="e#256#257#0" expanded="true" />
-                <element signature="e#1013#1014#0" expanded="true" />
-                <element signature="e#1061#1062#0" expanded="true" />
-                <element signature="e#2177#2178#0" expanded="true" />
-                <element signature="e#2751#2752#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Tests/BinaryTreeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="86" selection-start-line="86" selection-end-line="86" />
+            <state relative-caret-position="1800">
+              <caret line="120" column="30" lean-forward="true" selection-start-line="120" selection-start-column="30" selection-end-line="120" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2463#2472#0" expanded="true" />
+                <element signature="e#3004#3013#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -75,13 +86,16 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/BinaryTree.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/BinaryTreeMain.java" />
-        <option value="$PROJECT_DIR$/Tests/BinaryTreeTest.java" />
         <option value="$PROJECT_DIR$/src/TreeNode.java" />
+        <option value="$PROJECT_DIR$/src/BinaryTreeMain.java" />
         <option value="$PROJECT_DIR$/src/BinaryTree.java" />
+        <option value="$PROJECT_DIR$/Tests/BinaryTreeTest.java" />
       </list>
     </option>
   </component>
@@ -99,7 +113,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -122,6 +135,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -129,6 +143,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558560814490" />
@@ -198,68 +213,71 @@
       <updated>1558541350980</updated>
       <workItem from="1558541352140" duration="12011000" />
       <workItem from="1558557087016" duration="3724000" />
+      <workItem from="1558636301478" duration="3632000" />
+      <workItem from="1558716384308" duration="1403000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BinaryTreeTest - 2019.05.22 at 16h 05m 47s.xml">
+    <history-entry file="BinaryTreeTest - 2019.05.23 at 14h 36m 32s.xml">
       <configuration name="BinaryTreeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BinaryTreeTest - 2019.05.22 at 16h 31m 46s.xml">
+    <history-entry file="BinaryTreeTest - 2019.05.23 at 23h 04m 36s.xml">
       <configuration name="BinaryTreeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BinaryTreeTest - 2019.05.22 at 16h 47m 13s.xml">
+    <history-entry file="BinaryTreeTest - 2019.05.24 at 13h 02m 38s.xml">
       <configuration name="BinaryTreeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BinaryTreeTest - 2019.05.22 at 16h 48m 41s.xml">
+    <history-entry file="BinaryTreeTest - 2019.05.24 at 13h 03m 49s.xml">
       <configuration name="BinaryTreeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BinaryTreeTest - 2019.05.22 at 16h 59m 28s.xml">
+    <history-entry file="BinaryTreeTest - 2019.05.24 at 13h 04m 20s.xml">
       <configuration name="BinaryTreeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BinaryTreeTest - 2019.05.22 at 17h 00m 54s.xml">
+    <history-entry file="BinaryTreeTest - 2019.05.24 at 13h 08m 59s.xml">
       <configuration name="BinaryTreeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BinaryTreeTest - 2019.05.22 at 17h 06m 25s.xml">
+    <history-entry file="BinaryTreeTest - 2019.05.24 at 13h 09m 43s.xml">
       <configuration name="BinaryTreeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BinaryTreeTest - 2019.05.22 at 17h 08m 19s.xml">
+    <history-entry file="BinaryTreeTest - 2019.05.24 at 13h 10m 50s.xml">
       <configuration name="BinaryTreeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BinaryTreeTest - 2019.05.22 at 17h 17m 53s.xml">
+    <history-entry file="BinaryTreeTest - 2019.05.24 at 13h 11m 42s.xml">
       <configuration name="BinaryTreeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BinaryTreeTest - 2019.05.22 at 17h 33m 32s.xml">
+    <history-entry file="BinaryTreeTest - 2019.05.24 at 13h 12m 04s.xml">
       <configuration name="BinaryTreeTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15735000" />
+    <option name="totallyTimeSpent" value="20770000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="97" y="5" width="1440" height="1043" extended-state="0" />
+    <frame x="97" y="5" width="1440" height="1043" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
-      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Favorites" order="3" sideWeight="0.50190115" side_tool="true" weight="0.14377682" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.14202899" />
+      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.49809885" visible="true" weight="0.14592275" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="1" />
-      <window_info anchor="bottom" id="Terminal" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="1" weight="0.2178344" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.3299363" />
       <window_info anchor="bottom" id="Database Changes" order="3" />
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.32967034" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.4637224" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32967034" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.47634068" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="12" />
+      <window_info anchor="bottom" id="Problems" order="13" />
       <window_info anchor="right" id="Theme Preview" order="0" />
       <window_info anchor="right" id="Database" order="1" />
       <window_info anchor="right" id="Capture Analysis" order="2" />
@@ -306,50 +324,48 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/BinaryTreeMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/TreeNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
+        <state relative-caret-position="225">
           <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
           <folding>
             <element signature="e#206#207#0" expanded="true" />
             <element signature="e#232#233#0" expanded="true" />
-            <element signature="e#264#265#0" expanded="true" />
-            <element signature="e#290#291#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/BinaryTreeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="86" selection-start-line="86" selection-end-line="86" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BinaryTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="59" column="67" selection-start-line="59" selection-start-column="67" selection-end-line="59" selection-end-column="67" />
+        <state relative-caret-position="-1433">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#130#131#0" expanded="true" />
-            <element signature="e#157#158#0" expanded="true" />
+            <element signature="e#169#170#0" expanded="true" />
+            <element signature="e#196#197#0" expanded="true" />
             <element signature="e#229#230#0" expanded="true" />
             <element signature="e#256#257#0" expanded="true" />
-            <element signature="e#1013#1014#0" expanded="true" />
-            <element signature="e#1061#1062#0" expanded="true" />
+            <element signature="e#2128#2129#0" expanded="true" />
             <element signature="e#2177#2178#0" expanded="true" />
-            <element signature="e#2751#2752#0" expanded="true" />
+            <element signature="e#2791#2800#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BinaryTreeMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/BinaryTreeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1800">
+          <caret line="120" column="30" lean-forward="true" selection-start-line="120" selection-start-column="30" selection-end-line="120" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2463#2472#0" expanded="true" />
+            <element signature="e#3004#3013#0" expanded="true" />
           </folding>
         </state>
       </provider>
