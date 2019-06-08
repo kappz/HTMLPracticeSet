@@ -15,7 +15,7 @@ class BinaryTreeTest {
     @Test
     void BinaryTreeInsert_InsertRoot() {
         binaryTree.insert(5);
-        assertEquals(true, binaryTree.find(5));
+        assertEquals(5, binaryTree.getRoot().getKey());
     }
 
     @Test
