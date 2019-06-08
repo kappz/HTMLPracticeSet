@@ -1,0 +1,17 @@
+/Users/peterodonohue/Projects/LeetCodeAlgorithmQuestions/LeetCodeAlgorithmTests/bin/Debug/netcoreapp2.2/NUnit3.TestAdapter.dll
+/Users/peterodonohue/Projects/LeetCodeAlgorithmQuestions/LeetCodeAlgorithmTests/bin/Debug/netcoreapp2.2/NUnit3.TestAdapter.pdb
+/Users/peterodonohue/Projects/LeetCodeAlgorithmQuestions/LeetCodeAlgorithmTests/bin/Debug/netcoreapp2.2/nunit.engine.netstandard.dll
+/Users/peterodonohue/Projects/LeetCodeAlgorithmQuestions/LeetCodeAlgorithmTests/bin/Debug/netcoreapp2.2/LeetCodeAlgorithmUnitTests.deps.json
+/Users/peterodonohue/Projects/LeetCodeAlgorithmQuestions/LeetCodeAlgorithmTests/bin/Debug/netcoreapp2.2/LeetCodeAlgorithmUnitTests.runtimeconfig.json
+/Users/peterodonohue/Projects/LeetCodeAlgorithmQuestions/LeetCodeAlgorithmTests/bin/Debug/netcoreapp2.2/LeetCodeAlgorithmUnitTests.runtimeconfig.dev.json
+/Users/peterodonohue/Projects/LeetCodeAlgorithmQuestions/LeetCodeAlgorithmTests/bin/Debug/netcoreapp2.2/LeetCodeAlgorithmUnitTests.dll
+/Users/peterodonohue/Projects/LeetCodeAlgorithmQuestions/LeetCodeAlgorithmTests/bin/Debug/netcoreapp2.2/LeetCodeAlgorithmUnitTests.pdb
+/Users/peterodonohue/Projects/LeetCodeAlgorithmQuestions/LeetCodeAlgorithmTests/obj/Debug/netcoreapp2.2/LeetCodeAlgorithmUnitTests.csprojAssemblyReference.cache
+/Users/peterodonohue/Projects/LeetCodeAlgorithmQuestions/LeetCodeAlgorithmTests/obj/Debug/netcoreapp2.2/LeetCodeAlgorithmUnitTests.csproj.CoreCompileInputs.cache
+/Users/peterodonohue/Projects/LeetCodeAlgorithmQuestions/LeetCodeAlgorithmTests/obj/Debug/netcoreapp2.2/LeetCodeAlgorithmUnitTests.AssemblyInfoInputs.cache
+/Users/peterodonohue/Projects/LeetCodeAlgorithmQuestions/LeetCodeAlgorithmTests/obj/Debug/netcoreapp2.2/LeetCodeAlgorithmUnitTests.AssemblyInfo.cs
+/Users/peterodonohue/Projects/LeetCodeAlgorithmQuestions/LeetCodeAlgorithmTests/obj/Debug/netcoreapp2.2/LeetCodeAlgorithmUnitTests.dll
+/Users/peterodonohue/Projects/LeetCodeAlgorithmQuestions/LeetCodeAlgorithmTests/obj/Debug/netcoreapp2.2/LeetCodeAlgorithmUnitTests.pdb
+/Users/peterodonohue/Projects/LeetCodeAlgorithmQuestions/LeetCodeAlgorithmTests/bin/Debug/netcoreapp2.2/LeetCodeAlgorithmQuestions.dll
+/Users/peterodonohue/Projects/LeetCodeAlgorithmQuestions/LeetCodeAlgorithmTests/bin/Debug/netcoreapp2.2/LeetCodeAlgorithmQuestions.pdb
+/Users/peterodonohue/Projects/LeetCodeAlgorithmQuestions/LeetCodeAlgorithmTests/obj/Debug/netcoreapp2.2/LeetCodeAlgorithmUnitTests.csproj.CopyComplete

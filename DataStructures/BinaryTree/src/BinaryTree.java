@@ -4,35 +4,48 @@ import java.util.*;
 
 public class BinaryTree {
     private TreeNode root;
+    private int height;
 
     BinaryTree() {
         root = null;
+        height = 0;
     }
 
     public TreeNode getRoot() {
         return root;
     }
+    public int getHeight() {
+        return height;
+    }
 
     public void insert(int value) {
+        int currentHeight = 1;
         if (root == null) {
             root = new TreeNode((value));
+            height = currentHeight;
         }
         else {
-            insertRecursion(root, value);
+            insertRecursion(root, value, currentHeight);
         }
     }
 
-    private TreeNode insertRecursion(TreeNode currentNode, int value) {
+    private TreeNode insertRecursion(TreeNode currentNode, int value, int currentHeight) {
         if (currentNode == null) {
             currentNode = new TreeNode((value));
         }
-        else if (currentNode.getKey() >= value) {
-            currentNode.left = insertRecursion(currentNode.left, value);
+        else {
+            if (currentNode.getKey() >= value) {
+                ++currentHeight;
+                currentNode.left = insertRecursion(currentNode.left, value, currentHeight);
+            }
+            else if (currentNode.getKey() < value) {
+                ++currentHeight;
+                currentNode.right = insertRecursion(currentNode.right, value, currentHeight);
+            }
         }
-        else if (currentNode.getKey() < value) {
-            currentNode.right = insertRecursion(currentNode.right, value);
+        if (currentHeight > height) {
+            height = currentHeight;
         }
-
         return currentNode;
     }
 

@@ -35,7 +35,16 @@ class BinaryTreeTest {
         binaryTree.insert(5);
         assertEquals(true, binaryTree.find(6));
     }
-
+    @Test
+    void BinaryTreeHeight_HeightIncrementedAfterTreeHeightIncreases() {
+        int expected = 3;
+        binaryTree.insert(7);
+        binaryTree.insert(13);
+        binaryTree.insert(5);
+        binaryTree.insert(3);
+        binaryTree.insert(6);
+        assertEquals(expected, binaryTree.getHeight());
+    }
     @Test
     void BinaryTreeFind_ReturnsTrueIfKeyFound() {
         binaryTree.insert(9);
@@ -124,5 +133,4 @@ class BinaryTreeTest {
         actual = binaryTree.traverse("postorder");
         assertEquals(expected, actual);
     }
-
 }
