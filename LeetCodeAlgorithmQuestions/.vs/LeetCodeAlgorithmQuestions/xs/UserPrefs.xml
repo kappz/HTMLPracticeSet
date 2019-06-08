@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{377B7625-2620-4115-82BB-5DD1FA07CBA3}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="LeetCodeAlgorithmTests/JewelsAndStonesTests.cs">
+    <Files>
+      <File FileName="LeetCodeAlgorithmQuestions/JewelsAndStones.cs" Line="5" Column="5" />
+      <File FileName="LeetCodeAlgorithmTests/JewelsAndStonesTests.cs" Line="14" Column="47" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="LeetCodeAlgorithmQuestions" expanded="True">
+            <Node name="LeetCodeAlgorithmQuestions" expanded="True" />
+            <Node name="LeetCodeAlgorithmUnitTests" expanded="True">
+              <Node name="JewelsAndStonesTests.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.LeetCodeAlgorithmUnitTests PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
