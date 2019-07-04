@@ -7,3 +7,12 @@
 /Users/peterodonohue/Projects/LeetCodeAlgorithmQuestions/LeetCodeAlgorithmQuestions/obj/Debug/netcoreapp2.2/LeetCodeAlgorithmQuestions.AssemblyInfo.cs
 /Users/peterodonohue/Projects/LeetCodeAlgorithmQuestions/LeetCodeAlgorithmQuestions/obj/Debug/netcoreapp2.2/LeetCodeAlgorithmQuestions.dll
 /Users/peterodonohue/Projects/LeetCodeAlgorithmQuestions/LeetCodeAlgorithmQuestions/obj/Debug/netcoreapp2.2/LeetCodeAlgorithmQuestions.pdb
+C:\Users\addco\Documents\CodeProjects\PracticeSets\LeetCodeAlgorithmQuestions\LeetCodeAlgorithmQuestions\bin\Debug\netcoreapp2.2\LeetCodeAlgorithmQuestions.deps.json
+C:\Users\addco\Documents\CodeProjects\PracticeSets\LeetCodeAlgorithmQuestions\LeetCodeAlgorithmQuestions\bin\Debug\netcoreapp2.2\LeetCodeAlgorithmQuestions.dll
+C:\Users\addco\Documents\CodeProjects\PracticeSets\LeetCodeAlgorithmQuestions\LeetCodeAlgorithmQuestions\bin\Debug\netcoreapp2.2\LeetCodeAlgorithmQuestions.pdb
+C:\Users\addco\Documents\CodeProjects\PracticeSets\LeetCodeAlgorithmQuestions\LeetCodeAlgorithmQuestions\obj\Debug\netcoreapp2.2\LeetCodeAlgorithmQuestions.csprojAssemblyReference.cache
+C:\Users\addco\Documents\CodeProjects\PracticeSets\LeetCodeAlgorithmQuestions\LeetCodeAlgorithmQuestions\obj\Debug\netcoreapp2.2\LeetCodeAlgorithmQuestions.csproj.CoreCompileInputs.cache
+C:\Users\addco\Documents\CodeProjects\PracticeSets\LeetCodeAlgorithmQuestions\LeetCodeAlgorithmQuestions\obj\Debug\netcoreapp2.2\LeetCodeAlgorithmQuestions.AssemblyInfoInputs.cache
+C:\Users\addco\Documents\CodeProjects\PracticeSets\LeetCodeAlgorithmQuestions\LeetCodeAlgorithmQuestions\obj\Debug\netcoreapp2.2\LeetCodeAlgorithmQuestions.AssemblyInfo.cs
+C:\Users\addco\Documents\CodeProjects\PracticeSets\LeetCodeAlgorithmQuestions\LeetCodeAlgorithmQuestions\obj\Debug\netcoreapp2.2\LeetCodeAlgorithmQuestions.dll
+C:\Users\addco\Documents\CodeProjects\PracticeSets\LeetCodeAlgorithmQuestions\LeetCodeAlgorithmQuestions\obj\Debug\netcoreapp2.2\LeetCodeAlgorithmQuestions.pdb

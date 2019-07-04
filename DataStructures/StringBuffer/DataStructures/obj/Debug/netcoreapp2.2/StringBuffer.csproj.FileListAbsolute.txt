@@ -1,0 +1,11 @@
+C:\Users\addco\Documents\CodeProjects\PracticeSets\DataStructures\StringBuffer\DataStructures\bin\Debug\netcoreapp2.2\StringBuffer.deps.json
+C:\Users\addco\Documents\CodeProjects\PracticeSets\DataStructures\StringBuffer\DataStructures\bin\Debug\netcoreapp2.2\StringBuffer.runtimeconfig.json
+C:\Users\addco\Documents\CodeProjects\PracticeSets\DataStructures\StringBuffer\DataStructures\bin\Debug\netcoreapp2.2\StringBuffer.runtimeconfig.dev.json
+C:\Users\addco\Documents\CodeProjects\PracticeSets\DataStructures\StringBuffer\DataStructures\bin\Debug\netcoreapp2.2\StringBuffer.dll
+C:\Users\addco\Documents\CodeProjects\PracticeSets\DataStructures\StringBuffer\DataStructures\bin\Debug\netcoreapp2.2\StringBuffer.pdb
+C:\Users\addco\Documents\CodeProjects\PracticeSets\DataStructures\StringBuffer\DataStructures\obj\Debug\netcoreapp2.2\StringBuffer.csprojAssemblyReference.cache
+C:\Users\addco\Documents\CodeProjects\PracticeSets\DataStructures\StringBuffer\DataStructures\obj\Debug\netcoreapp2.2\StringBuffer.csproj.CoreCompileInputs.cache
+C:\Users\addco\Documents\CodeProjects\PracticeSets\DataStructures\StringBuffer\DataStructures\obj\Debug\netcoreapp2.2\StringBuffer.AssemblyInfoInputs.cache
+C:\Users\addco\Documents\CodeProjects\PracticeSets\DataStructures\StringBuffer\DataStructures\obj\Debug\netcoreapp2.2\StringBuffer.AssemblyInfo.cs
+C:\Users\addco\Documents\CodeProjects\PracticeSets\DataStructures\StringBuffer\DataStructures\obj\Debug\netcoreapp2.2\StringBuffer.dll
+C:\Users\addco\Documents\CodeProjects\PracticeSets\DataStructures\StringBuffer\DataStructures\obj\Debug\netcoreapp2.2\StringBuffer.pdb

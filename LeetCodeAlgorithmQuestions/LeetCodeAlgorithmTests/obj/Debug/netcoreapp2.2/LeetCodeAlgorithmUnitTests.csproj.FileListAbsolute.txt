@@ -15,3 +15,9 @@
 /Users/peterodonohue/Projects/LeetCodeAlgorithmQuestions/LeetCodeAlgorithmTests/bin/Debug/netcoreapp2.2/LeetCodeAlgorithmQuestions.dll
 /Users/peterodonohue/Projects/LeetCodeAlgorithmQuestions/LeetCodeAlgorithmTests/bin/Debug/netcoreapp2.2/LeetCodeAlgorithmQuestions.pdb
 /Users/peterodonohue/Projects/LeetCodeAlgorithmQuestions/LeetCodeAlgorithmTests/obj/Debug/netcoreapp2.2/LeetCodeAlgorithmUnitTests.csproj.CopyComplete
+C:\Users\addco\Documents\CodeProjects\PracticeSets\LeetCodeAlgorithmQuestions\LeetCodeAlgorithmTests\obj\Debug\netcoreapp2.2\LeetCodeAlgorithmUnitTests.csprojAssemblyReference.cache
+C:\Users\addco\Documents\CodeProjects\PracticeSets\LeetCodeAlgorithmQuestions\LeetCodeAlgorithmTests\obj\Debug\netcoreapp2.2\LeetCodeAlgorithmUnitTests.csproj.CoreCompileInputs.cache
+C:\Users\addco\Documents\CodeProjects\PracticeSets\LeetCodeAlgorithmQuestions\LeetCodeAlgorithmTests\obj\Debug\netcoreapp2.2\LeetCodeAlgorithmUnitTests.AssemblyInfoInputs.cache
+C:\Users\addco\Documents\CodeProjects\PracticeSets\LeetCodeAlgorithmQuestions\LeetCodeAlgorithmTests\obj\Debug\netcoreapp2.2\LeetCodeAlgorithmUnitTests.AssemblyInfo.cs
+C:\Users\addco\Documents\CodeProjects\PracticeSets\LeetCodeAlgorithmQuestions\LeetCodeAlgorithmTests\obj\Debug\netcoreapp2.2\LeetCodeAlgorithmUnitTests.dll
+C:\Users\addco\Documents\CodeProjects\PracticeSets\LeetCodeAlgorithmQuestions\LeetCodeAlgorithmTests\obj\Debug\netcoreapp2.2\LeetCodeAlgorithmUnitTests.pdb

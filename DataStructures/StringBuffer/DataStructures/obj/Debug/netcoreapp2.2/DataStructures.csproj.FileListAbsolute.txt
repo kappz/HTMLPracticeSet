@@ -1,0 +1,11 @@
+C:\Users\addco\source\repos\DataStructures\DataStructures\bin\Debug\netcoreapp2.2\DataStructures.deps.json
+C:\Users\addco\source\repos\DataStructures\DataStructures\bin\Debug\netcoreapp2.2\DataStructures.runtimeconfig.json
+C:\Users\addco\source\repos\DataStructures\DataStructures\bin\Debug\netcoreapp2.2\DataStructures.runtimeconfig.dev.json
+C:\Users\addco\source\repos\DataStructures\DataStructures\bin\Debug\netcoreapp2.2\DataStructures.dll
+C:\Users\addco\source\repos\DataStructures\DataStructures\bin\Debug\netcoreapp2.2\DataStructures.pdb
+C:\Users\addco\source\repos\DataStructures\DataStructures\obj\Debug\netcoreapp2.2\DataStructures.csprojAssemblyReference.cache
+C:\Users\addco\source\repos\DataStructures\DataStructures\obj\Debug\netcoreapp2.2\DataStructures.csproj.CoreCompileInputs.cache
+C:\Users\addco\source\repos\DataStructures\DataStructures\obj\Debug\netcoreapp2.2\DataStructures.AssemblyInfoInputs.cache
+C:\Users\addco\source\repos\DataStructures\DataStructures\obj\Debug\netcoreapp2.2\DataStructures.AssemblyInfo.cs
+C:\Users\addco\source\repos\DataStructures\DataStructures\obj\Debug\netcoreapp2.2\DataStructures.dll
+C:\Users\addco\source\repos\DataStructures\DataStructures\obj\Debug\netcoreapp2.2\DataStructures.pdb
