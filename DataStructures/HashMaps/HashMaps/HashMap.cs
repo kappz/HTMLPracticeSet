@@ -8,6 +8,7 @@ namespace HashMaps
 {
     public class HashMap<K, V>
     {
+        int numElements;
         int size;
         int capacity;
         float loadFactor;
@@ -16,10 +17,12 @@ namespace HashMaps
         public HashMap(int s = 16, float lf = 0.75f)
         {
             size = s;
+            numElements = 0;
             loadFactor = lf;
             capacity = (int)(size / loadFactor);
             buckets = new Node<K, V>[size];
         }
+
         public void Insert(K k, V val)
         {
             int index = Hash(k);
@@ -34,15 +37,50 @@ namespace HashMaps
                 {
                     walker = walker.next;
                 }
-                walker = new Node<K, V>(k, val);
+                walker.next = new Node<K, V>(k, val);
             }
+            ++numElements;
         }
 
-        public V GetValue(K k)
+        public Node<K, V> Get(K k)
         {
             int index = Hash(k);
-            return buckets[index].Value();
+            return buckets[index];
 
+        }
+
+        public bool Exists(V val)
+        {
+            Node<K, V> walker;
+
+            foreach(Node<K, V> node in buckets)
+            {
+                if (node != null)
+                {
+                    if (EqualityComparer<V>.Default.Equals(node.Value(), val))
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        walker = node.next;
+                        while (walker != null)
+                        {
+                            if (EqualityComparer<V>.Default.Equals(walker.Value(), val))
+                            {
+                                return true;
+                            }
+                            walker = walker.next;
+                        }
+                    }
+                }
+            }
+            return false;
+        }
+
+        public int Size()
+        {
+            return numElements;
         }
 
         public int Hash(K k)
