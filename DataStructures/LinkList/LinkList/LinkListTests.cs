@@ -56,7 +56,61 @@ namespace LinkList
 
             list.Head().Value().Should().Be('q');
             list.Head().next.next.Value().Should().Be('r');
+        }
 
+        [Test]
+        public void LinkList_AddAfter_AddsNewElementAfterGivenElement()
+        {
+            // Arrange
+            LinkList<char> list = new LinkList<char>();
+
+            // Act
+            list.AddEnd('b');
+            list.AddBegin('z');
+            list.AddAfter('z', 'r');
+            list.AddAfter('b', 'q');
+            list.AddAfter('r', 'y');
+
+            // Assert
+            list.Head().next.Value().Should().Be('r');
+            list.Head().next.next.Value().Should().Be('y');
+            list.Tail().Value().Should().Be('q');
+        }
+
+        [Test]
+        public void LinkList_Exists_ReturnsTrueIfElementIsInListElseReturnsFalse()
+        {
+            // Arrange
+            LinkList<char> list = new LinkList<char>();
+
+            // Act
+            list.AddEnd('b');
+            list.AddBegin('z');
+            list.AddAfter('z', 'r');
+            list.AddAfter('b', 'q');
+            list.AddAfter('r', 'y');
+
+            list.Exists('r').Should().BeTrue();
+            list.Exists('n').Should().BeFalse();
+        }
+
+        [Test]
+        public void LinkList_Remove_ReturnsTrueIfDeletedElseReturnsFalse()
+        {
+            // Arrange
+            LinkList<char> list = new LinkList<char>();
+
+            // Act
+            list.AddEnd('b');
+            list.AddBegin('z');
+            list.AddAfter('z', 'r');
+            list.AddAfter('b', 'q');
+            list.AddAfter('r', 'y');
+
+            // Assert
+            list.Remove('y').Should().BeTrue();
+            list.Remove('v').Should().BeFalse();
+            list.Exists('y').Should().BeFalse();
         }
     }
 }
