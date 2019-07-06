@@ -9,7 +9,7 @@ namespace LinkList
     public class Node<T>
     {
         T value;
-        Node<T> next;
+        public Node<T> next;
 
         public Node()
         {
@@ -25,11 +25,6 @@ namespace LinkList
         public T Value()
         {
             return value;
-        }
-
-        public Node<T> Next()
-        {
-            return next;
         }
     }
 }
