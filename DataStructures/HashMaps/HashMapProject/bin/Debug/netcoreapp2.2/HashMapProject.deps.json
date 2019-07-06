@@ -1,0 +1,66 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.2",
+    "signature": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.2": {
+      "HashMapProject/1.0.0": {
+        "dependencies": {
+          "HashMaps": "1.0.0"
+        },
+        "runtime": {
+          "HashMapProject.dll": {}
+        }
+      },
+      "HashMaps/1.0.0": {
+        "dependencies": {
+          "nunit.framework": "3.12.0.0",
+          "FluentAssertions": "5.7.0.0"
+        },
+        "runtime": {
+          "HashMaps.dll": {}
+        }
+      },
+      "nunit.framework.Reference/3.12.0.0": {
+        "runtime": {
+          "nunit.framework.dll": {
+            "assemblyVersion": "3.12.0.0",
+            "fileVersion": "3.12.0.0"
+          }
+        }
+      },
+      "FluentAssertions.Reference/5.7.0.0": {
+        "runtime": {
+          "FluentAssertions.dll": {
+            "assemblyVersion": "5.7.0.0",
+            "fileVersion": "5.7.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "HashMapProject/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HashMaps/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "nunit.framework.Reference/3.12.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FluentAssertions.Reference/5.7.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

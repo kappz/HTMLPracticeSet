@@ -148,6 +148,28 @@ namespace HashMaps
             }
             return false;
         }
+
+        public void Print()
+        {
+            Node<K, V> walker;
+            
+            foreach (Node<K, V> element in buckets)
+            {
+                if (element != null)
+                {
+                    walker = element;
+                    while (walker != null)
+                    {
+                        Console.Write(walker.Value());
+                        Console.Write("   ");
+                        walker = walker.next;
+                    }
+                    Console.WriteLine();
+                }
+            }
+            Console.WriteLine();
+        }
+
         private int HashFunction(int key)
         {
             return key % size;

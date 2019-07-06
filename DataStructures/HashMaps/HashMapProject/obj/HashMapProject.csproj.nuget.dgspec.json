@@ -1,0 +1,75 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\addco\\Documents\\CodeProjects\\PracticeSets\\DataStructures\\HashMaps\\HashMapProject\\HashMapProject.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\addco\\Documents\\CodeProjects\\PracticeSets\\DataStructures\\HashMaps\\HashMapProject\\HashMapProject.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\addco\\Documents\\CodeProjects\\PracticeSets\\DataStructures\\HashMaps\\HashMapProject\\HashMapProject.csproj",
+        "projectName": "HashMapProject",
+        "projectPath": "C:\\Users\\addco\\Documents\\CodeProjects\\PracticeSets\\DataStructures\\HashMaps\\HashMapProject\\HashMapProject.csproj",
+        "packagesPath": "C:\\Users\\addco\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\addco\\Documents\\CodeProjects\\PracticeSets\\DataStructures\\HashMaps\\HashMapProject\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\addco\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Users\\addco\\Documents\\CodeProjects\\PracticeSets\\DataStructures\\HashMaps\\HashMaps\\HashMaps.csproj": {
+                "projectPath": "C:\\Users\\addco\\Documents\\CodeProjects\\PracticeSets\\DataStructures\\HashMaps\\HashMaps\\HashMaps.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\addco\\Documents\\CodeProjects\\PracticeSets\\DataStructures\\HashMaps\\HashMaps\\HashMaps.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\addco\\Documents\\CodeProjects\\PracticeSets\\DataStructures\\HashMaps\\HashMaps\\HashMaps.csproj",
+        "projectName": "HashMaps",
+        "projectPath": "C:\\Users\\addco\\Documents\\CodeProjects\\PracticeSets\\DataStructures\\HashMaps\\HashMaps\\HashMaps.csproj"
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    }
+  }
+}
