@@ -31,8 +31,13 @@ namespace HashMaps
         [Test]
         public void HashMap_Insert_SuccessfullyAddsNewKeyValuePairToHashMap()
         {
+            // Arrange
             HashMap<int, int> Map = new HashMap<int, int>();
+
+            // Act
             Map.Insert(4, 5);
+
+            // Assert
             Map.Get(4).Value().Should().Be(5);
             Map.Size().Should().Be(1);
 
@@ -122,6 +127,41 @@ namespace HashMaps
 
             // Assert
             map.Exists("Professor Snape").Should().BeFalse();
+        }
+
+        [Test]
+        public void HashMap_DeleteKeyValue_SuccessfullyDeletesObject()
+        {
+            // Arrange
+            HashMap<char, string> map = new HashMap<char, string>();
+
+            // Act
+            map.Insert('z', "Harry Potter");
+            map.Insert('z', "Lord Voldemort");
+            map.Insert('z', "Professor Dumbledore");
+            map.Insert('b', "Harry Potter");
+            map.Insert('b', "Lord Voldemort");
+            map.Insert('b', "Professor Dumbledore");
+            map.Insert('c', "Harry Potter");
+            map.Insert('c', "Lord Voldemort");
+            map.Insert('c', "Professor Dumbledore");
+            map.DeleteKeyValue('z', "Harry Potter");
+            map.DeleteKeyValue('b', "Professor Dumbledore");
+            map.DeleteKeyValue('c', "Lord Voldemort");
+
+            // Assert
+
+            // Item at beginning of list is deleted.
+            map.Get('z').Value().Should().Be("Lord Voldemort");
+            map.Get('z').next.Value().Should().Be("Professor Dumbledore");
+
+            // Item at end of list is deleted.
+            map.Get('b').Value().Should().Be("Harry Potter");
+            map.Get('b').next.Value().Should().Be("Lord Voldemort");
+
+            // Item in middle of list is deleted.
+            map.Get('c').Value().Should().Be("Harry Potter");
+            map.Get('c').next.Value().Should().Be("Professor Dumbledore");
         }
     }
 }

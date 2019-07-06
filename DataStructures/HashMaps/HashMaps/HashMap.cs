@@ -110,6 +110,44 @@ namespace HashMaps
             return index;
         }
 
+        public bool DeleteKeyValue(K k, V v)
+        {
+            int index = Hash(k);
+            Node<K, V> current;
+            Node<K, V> previous;
+            Node<K, V> next;
+
+            current = buckets[index];
+
+            if (current == null)
+            {
+                return false;
+            }
+            else if (EqualityComparer<V>.Default.Equals(current.Value(), v))
+            {
+                buckets[index] = current.next;
+                return true;
+            }
+            else
+            {
+                previous = current;
+                current = current.next;
+                next = current.next;
+                while (current != null)
+                {
+                    if (EqualityComparer<V>.Default.Equals(current.Value(), v))
+                    {
+                        current = null;
+                        previous.next = next;
+                        return true;
+                    }
+                    previous = current;
+                    current = current.next;
+                    next = current.next;
+                }
+            }
+            return false;
+        }
         private int HashFunction(int key)
         {
             return key % size;
