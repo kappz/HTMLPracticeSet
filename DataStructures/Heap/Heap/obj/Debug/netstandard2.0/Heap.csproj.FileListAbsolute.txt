@@ -1,0 +1,9 @@
+C:\Users\addco\Documents\CodeProjects\PracticeSets\DataStructures\Heap\Heap\bin\Debug\netstandard2.0\Heap.deps.json
+C:\Users\addco\Documents\CodeProjects\PracticeSets\DataStructures\Heap\Heap\bin\Debug\netstandard2.0\Heap.dll
+C:\Users\addco\Documents\CodeProjects\PracticeSets\DataStructures\Heap\Heap\bin\Debug\netstandard2.0\Heap.pdb
+C:\Users\addco\Documents\CodeProjects\PracticeSets\DataStructures\Heap\Heap\obj\Debug\netstandard2.0\Heap.csprojAssemblyReference.cache
+C:\Users\addco\Documents\CodeProjects\PracticeSets\DataStructures\Heap\Heap\obj\Debug\netstandard2.0\Heap.csproj.CoreCompileInputs.cache
+C:\Users\addco\Documents\CodeProjects\PracticeSets\DataStructures\Heap\Heap\obj\Debug\netstandard2.0\Heap.AssemblyInfoInputs.cache
+C:\Users\addco\Documents\CodeProjects\PracticeSets\DataStructures\Heap\Heap\obj\Debug\netstandard2.0\Heap.AssemblyInfo.cs
+C:\Users\addco\Documents\CodeProjects\PracticeSets\DataStructures\Heap\Heap\obj\Debug\netstandard2.0\Heap.dll
+C:\Users\addco\Documents\CodeProjects\PracticeSets\DataStructures\Heap\Heap\obj\Debug\netstandard2.0\Heap.pdb
