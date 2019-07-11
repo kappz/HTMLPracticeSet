@@ -24,7 +24,7 @@ namespace CrackingCodeProblems.Solution_Tests
         }
 
         [Test]
-        public void StringProblems_ContainsOnlyUniqueCharactes_ReturnsFalseIfTextIsNull()
+        public void StringProblems_ContainsOnlyUniqueCharactes_ReturnsFalseIfTextIsEmpty()
         {
             // Arrange
             boolExpected = false;
@@ -33,7 +33,7 @@ namespace CrackingCodeProblems.Solution_Tests
             boolActual = text.ContainsOnlyUniqueCharacters("");
 
             // Assert
-            boolActual.Should().Equals(boolExpected);
+            boolActual.Should().Be(boolExpected);
         }
 
         [Test]
@@ -43,11 +43,12 @@ namespace CrackingCodeProblems.Solution_Tests
             boolExpected = true;
 
             // Act
-            boolActual = text.ContainsOnlyUniqueCharacters("test");
+            boolActual = text.ContainsOnlyUniqueCharacters("tes");
 
             // Assert
-            boolActual.Should().Equals(boolExpected);
+            boolActual.Should().Be(boolExpected);
         }
+
 
         [Test]
         public void StringProblems_ContainsOnlyUniqueCharactes_ReturnsFalseIfStringContainsDuplicateCharacters()
@@ -56,10 +57,10 @@ namespace CrackingCodeProblems.Solution_Tests
             boolExpected = false;
 
             // Act
-            boolActual = text.ContainsOnlyUniqueCharacters("tesst");
+            boolActual = text.ContainsOnlyUniqueCharacters("test");
 
             // Assert
-            boolActual.Should().Equals(boolExpected);
+            boolActual.Should().Be(boolExpected);
         }
 
         [Test]
@@ -72,24 +73,24 @@ namespace CrackingCodeProblems.Solution_Tests
             stringActual = text.Reverse("t");
 
             // Assert
-            stringActual.Should().Equals(stringExpected);
+            stringActual.Should().Be(stringExpected);
         }
 
         [Test]
-        public void StringProblems_ReverseString_ReturnsNullIfStringLengthIsZero()
+        public void StringProblems_Reverse_ReturnsNullIfStringLengthIsZero()
         {
             // Arrange
-            stringExpected = null;
+            stringExpected = "";
 
             // Act
             stringActual = text.Reverse("");
 
             // Assert
-            stringActual.Should().BeNull();
+            stringActual.Should().Be(stringExpected);
         }
 
         [Test]
-        public void StringProblems_ReverseString_ReturnsStringReversedForStringLengthGreaterThanOne()
+        public void StringProblems_Reverse_ReturnsStringReversedForStringLengthGreaterThanOne()
         {
             // Arrange
             stringExpected = "tset";
@@ -101,8 +102,8 @@ namespace CrackingCodeProblems.Solution_Tests
             oddLengthStringActual = text.Reverse("there");
 
             // Assert
-            stringActual.Should().Equals(stringExpected);
-            oddLengthStringActual.Should().Equals(oddLengthStringExpected);
+            stringActual.Should().Be(stringExpected);
+            oddLengthStringActual.Should().Be(oddLengthStringExpected);
         }
 
         [Test]
@@ -123,6 +124,29 @@ namespace CrackingCodeProblems.Solution_Tests
 
             // Assert
             boolActual.Should().BeTrue();
+        }
+
+        [Test]
+        public void StringProblems_ReplaceSpaces_ReturnsSameStringIfStringContainsNoSpaces()
+        {
+            // Act
+            stringExpected = "helloworld";
+
+            stringActual = text.ReplaceSpaces("helloworld");
+
+            // Assert
+            stringActual.Should().Be(stringExpected);
+        }
+        [Test]
+        public void StringProblems_ReplaceSpaces_ReturnsStringWithSpacesReplaced()
+        {
+            // Act
+            stringExpected = "%20hello%20world%20";
+
+            stringActual = text.ReplaceSpaces(" hello world ");
+
+            // Assert
+            stringActual.Should().Be(stringExpected);
         }
     }
 }

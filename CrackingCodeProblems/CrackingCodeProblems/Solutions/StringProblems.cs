@@ -14,7 +14,7 @@ namespace CrackingCodeProblems.Class_Solutions
             bool result = true;
             IDictionary<char, int> characterFrequencies = new Dictionary<char, int>();
 
-            if (text == null)
+            if (text == "")
             {
                 result = false;
             }
@@ -37,14 +37,10 @@ namespace CrackingCodeProblems.Class_Solutions
 
         public string Reverse(string text)
         {
-            int pivot = text.Length / 2;
-            int end = text.Length - 1;
-            int start = 0;
-            char temp;
-            char[] arr = text.ToCharArray();
+            StringBuilder reversed = new StringBuilder();
             if (text.Length == 0)
             {
-                return null;
+                return "";
             }
             else if (text.Length == 1)
             {
@@ -52,15 +48,12 @@ namespace CrackingCodeProblems.Class_Solutions
             }
             else
             {
-                while (start < end)
+                for (int i = text.Length -1; i >= 0; i--)
                 {
-                    temp = arr[end];
-                    arr[end] = arr[start];
-                    end--;
-                    start++;
+                    reversed.Append(text[i]);
                 }
             }
-            text = arr.ToString();
+            text = reversed.ToString();
             return text;
         }
 
@@ -115,6 +108,27 @@ namespace CrackingCodeProblems.Class_Solutions
                     result = false;
                 }
             }
+            return result;
+        }
+
+        public string ReplaceSpaces(string text)
+        {
+            string result;
+            StringBuilder replacementString = new StringBuilder();
+
+            for (int i = 0; i < text.Length; i++)
+            {
+                if (text[i] != ' ')
+                {
+                    replacementString.Append(text[i]);
+                }
+                else
+                {
+                    replacementString.Append("%20");
+                }
+            }
+            result = replacementString.ToString();
+
             return result;
         }
     }
