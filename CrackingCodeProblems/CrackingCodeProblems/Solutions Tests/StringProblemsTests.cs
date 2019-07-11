@@ -131,7 +131,6 @@ namespace CrackingCodeProblems.Solution_Tests
         {
             // Act
             stringExpected = "helloworld";
-
             stringActual = text.ReplaceSpaces("helloworld");
 
             // Assert
@@ -142,11 +141,43 @@ namespace CrackingCodeProblems.Solution_Tests
         {
             // Act
             stringExpected = "%20hello%20world%20";
-
             stringActual = text.ReplaceSpaces(" hello world ");
 
             // Assert
             stringActual.Should().Be(stringExpected);
+        }
+
+        [Test]
+        public void StringProblems_Compress_ReturnsStringCompressedIfItsLengthIsSmallerThanNonCompressedString()
+        {
+            //Act
+            string expected = "a2b1c5a3";
+            stringActual = text.Compress("aabcccccaaa");
+
+            // Assert
+            stringActual.Should().Be(expected);
+        }
+
+        [Test]
+        public void StringProblems_Compress_ReturnsOriginalStringIfCompressedStringLengthIsLarger()
+        {
+            //Act
+            string expected = "abcd";
+            stringActual = text.Compress("abcd");
+
+            // Assert
+            stringActual.Should().Be(expected);
+        }
+
+        [Test]
+        public void StringProblems_Compress_ReturnsEmptyStringIfOriginalStringIsEmpty()
+        {
+            //Act
+            string expected = "";
+            stringActual = text.Compress("");
+
+            // Assert
+            stringActual.Should().Be(expected);
         }
     }
 }

@@ -131,5 +131,49 @@ namespace CrackingCodeProblems.Class_Solutions
 
             return result;
         }
+
+        public string Compress(string text)
+        {
+            int iterator = 0;
+            int frequency = 0;
+            char character;
+            char currentCharacter;
+            StringBuilder textCompressed = new StringBuilder(text.Length * 2);
+            Dictionary<char, int> characterOccurance = new Dictionary<char, int>();
+   
+            if (text == "")
+            {
+                return text;
+            }
+            currentCharacter = text[0];
+            characterOccurance.Add(currentCharacter, 1);
+            for (int i = 1; i < text.Length; i++)
+            {
+                character = text[i];
+                if (currentCharacter == character)
+                {
+                    characterOccurance[character] = characterOccurance[character] + 1;
+                }
+                else
+                {
+                    textCompressed.Append(currentCharacter);
+                    textCompressed.Append(characterOccurance[currentCharacter]);
+                    characterOccurance.Remove(currentCharacter);
+                    currentCharacter = text[i];
+                    characterOccurance.Add(currentCharacter, 1);
+                }
+            }
+            textCompressed.Append(currentCharacter);
+            textCompressed.Append(characterOccurance[currentCharacter]);
+            if (textCompressed.Length > text.Length)
+            {
+                return text;
+            }
+            else
+            {
+                return textCompressed.ToString();
+            }
+
+        }
     }
 }
