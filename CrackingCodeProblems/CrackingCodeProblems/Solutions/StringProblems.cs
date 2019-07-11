@@ -6,16 +6,10 @@ using System.Threading.Tasks;
 
 namespace CrackingCodeProblems.Class_Solutions
 {
-    class UniqueCharacters
+    class StringProblems
     {
-        string text;
 
-        public UniqueCharacters(string t)
-        {
-            text = t;
-        }
-
-        public bool ContainsOnlyUniqueCharacters()
+        public bool ContainsOnlyUniqueCharacters(string text)
         {
             bool result = true;
             IDictionary<char, int> characterFrequencies = new Dictionary<char, int>();
@@ -39,6 +33,35 @@ namespace CrackingCodeProblems.Class_Solutions
                 }
             }
             return result;
+        }
+
+        public string Reverse(string text)
+        {
+            int pivot = text.Length / 2;
+            int end = text.Length - 1;
+            int start = 0;
+            char temp;
+            char[] arr = text.ToCharArray();
+            if (text.Length == 0)
+            {
+                return null;
+            }
+            else if (text.Length == 1)
+            {
+                return text;
+            }
+            else
+            {
+                while (start < end)
+                {
+                    temp = arr[end];
+                    arr[end] = arr[start];
+                    end--;
+                    start++;
+                }
+            }
+            text = arr.ToString();
+            return text;
         }
     }
 }
