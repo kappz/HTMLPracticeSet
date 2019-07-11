@@ -63,5 +63,59 @@ namespace CrackingCodeProblems.Class_Solutions
             text = arr.ToString();
             return text;
         }
+
+        public bool IsPermutation(string textA, string textB)
+        {
+            bool result = true;
+            Dictionary<char, int> textACharacterOccurances = new Dictionary<char, int>();
+            Dictionary<char, int> textBCharacterOccurances = new Dictionary<char, int>();
+
+            if (textA.Length != textB.Length || textA == textB)
+            {
+                result = false;
+            }
+            else
+            {
+                foreach (char character in textA)
+                {
+                    if (!textACharacterOccurances.ContainsKey(character))
+                    {
+                        textACharacterOccurances.Add(character, 1);
+                    }
+                    else
+                    {
+                        textACharacterOccurances[character] = textACharacterOccurances[character] + 1;
+                    }
+                }
+
+                foreach (char character in textB)
+                {
+                    if (!textBCharacterOccurances.ContainsKey(character))
+                    {
+                        textBCharacterOccurances.Add(character, 1);
+                    }
+                    else
+                    {
+                        textBCharacterOccurances[character] = textBCharacterOccurances[character] + 1;
+                    }
+                }
+
+                if (textACharacterOccurances.Count == textBCharacterOccurances.Count)
+                {
+                    foreach (var entry in textACharacterOccurances)
+                    {
+                        if (!textBCharacterOccurances.Contains(entry))
+                        {
+                            result = false;
+                        }
+                    }
+                }
+                else
+                {
+                    result = false;
+                }
+            }
+            return result;
+        }
     }
 }

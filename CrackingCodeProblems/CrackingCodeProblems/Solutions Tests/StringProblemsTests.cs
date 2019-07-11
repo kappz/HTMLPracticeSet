@@ -104,5 +104,25 @@ namespace CrackingCodeProblems.Solution_Tests
             stringActual.Should().Equals(stringExpected);
             oddLengthStringActual.Should().Equals(oddLengthStringExpected);
         }
+
+        [Test]
+        public void StringProblems_IsPermutation_ReturnsFalseIfStringIsNotPermutation()
+        {
+            // Act
+            boolActual = text.IsPermutation("abc", "abc");
+
+            // Assert
+            boolActual.Should().BeFalse();
+        }
+
+        [Test]
+        public void StringProblems_IsPermutation_ReturnsTrueIfStringIsAPermutation()
+        {
+            // Act
+            boolActual = text.IsPermutation("abc", "acb");
+
+            // Assert
+            boolActual.Should().BeTrue();
+        }
     }
 }
