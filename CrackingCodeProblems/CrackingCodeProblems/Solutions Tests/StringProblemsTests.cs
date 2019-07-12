@@ -189,11 +189,11 @@ namespace CrackingCodeProblems.Solution_Tests
             char[] matrixOneRowTwo = new char[4];
             char[] matrixOneRowThree = new char[4];
             char[] matrixOneRowFour = new char[4];
-            char[] matrixTwoRowOne = {'m', 'i', 'e', 'a' };
-            char[] matrixTwoRowTwo = {'n', 'j', 'f', 'b' };
-            char[] matrixTwoRowThree = {'o', 'k', 'g', 'c'};
-            char[] matrixTwoRowFour = {'p', 'l', 'h', 'd' };
-            char[,] preRotation = 
+            char[] matrixTwoRowOne = { 'm', 'i', 'e', 'a' };
+            char[] matrixTwoRowTwo = { 'n', 'j', 'f', 'b' };
+            char[] matrixTwoRowThree = { 'o', 'k', 'g', 'c' };
+            char[] matrixTwoRowFour = { 'p', 'l', 'h', 'd' };
+            char[,] preRotation =
             {
                 {'a','b','c','d'}, {'e', 'f', 'g', 'h'},
                 {'i', 'j', 'k', 'l'}, {'m', 'n', 'o', 'p'}
@@ -218,6 +218,47 @@ namespace CrackingCodeProblems.Solution_Tests
             areEqual.Should().BeTrue();
             areEqual = matrixOneRowFour.SequenceEqual(matrixTwoRowFour);
             areEqual.Should().BeTrue();
+        }
+
+        [Test]
+        public void StringProblems_ReplaceWithZeros_ReplacesCorrectIndicesWithZeros()
+        {
+            // Arrange
+            bool areEqual;
+            int[] matrixOneRowOne = new int[3];
+            int[] matrixOneRowTwo = new int[3];
+            int[] matrixOneRowThree = new int[3];
+            int[] matrixOneRowFour = new int[3];
+            int[] matrixTwoRowOne = {0, 0, 0};
+            int[] matrixTwoRowTwo = {3, 0, 0};
+            int[] matrixTwoRowThree = {0, 0, 0};
+            int[] matrixTwoRowFour = {4, 0, 0};
+            int[,] preReplacement =
+            {
+                {4, 0, 1}, {3, 5, 7},
+                {9, 18, 0}, {4, 12, 14}
+            };
+
+            // Act
+            text.ReplaceWithZeros(ref preReplacement, 4, 3);
+            for (int i = 0; i < 3; i++)
+            {
+                matrixOneRowOne[i] = preReplacement[0, i];
+                matrixOneRowTwo[i] = preReplacement[1, i];
+                matrixOneRowThree[i] = preReplacement[2, i];
+                matrixOneRowFour[i] = preReplacement[3, i];
+            }
+
+            // Assert
+            areEqual = matrixOneRowOne.SequenceEqual(matrixTwoRowOne);
+            areEqual.Should().BeTrue();
+            areEqual = matrixOneRowTwo.SequenceEqual(matrixTwoRowTwo);
+            areEqual.Should().BeTrue();
+            areEqual = matrixOneRowThree.SequenceEqual(matrixTwoRowThree);
+            areEqual.Should().BeTrue();
+            areEqual = matrixOneRowFour.SequenceEqual(matrixTwoRowFour);
+            areEqual.Should().BeTrue();
+
         }
     }
 }
