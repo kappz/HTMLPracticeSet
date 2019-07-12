@@ -9,7 +9,7 @@ using CrackingCodeProblems.Class_Solutions;
 
 namespace CrackingCodeProblems.Solution_Tests
 {
-    class StringProblemsTests
+    class StringProblemTests
     {
         bool boolActual;
         bool boolExpected;
