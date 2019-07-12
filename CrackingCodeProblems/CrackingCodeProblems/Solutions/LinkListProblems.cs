@@ -12,12 +12,23 @@ namespace CrackingCodeProblems.Solutions
 
         public void RemoveDuplicates(Node head)
         {
+
+            Dictionary<int, int> Links = new Dictionary<int, int>();
             Node current = head;
-            Node previous;
-            Node walker;
+            Node previous = head;
             while (current != null)
             {
+                if (!Links.ContainsKey(current.data))
+                {
+                    Links.Add(current.data, current.data);
+                }
+                else
+                {
+                    previous.next = current.next;
+                }
                 previous = current;
+                current = current.next;
+                /*previous = current;
                 walker = current.next;
                 while (walker != null)
                 {
@@ -28,7 +39,7 @@ namespace CrackingCodeProblems.Solutions
                     previous = walker;
                     walker = walker.next;
                 }
-                current = current.next;
+                current = current.next;*/
             }
         }
     }
