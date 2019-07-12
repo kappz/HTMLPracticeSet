@@ -8,31 +8,29 @@ namespace CrackingCodeProblems.Class_Solutions
 {
     class StringProblems
     {
-
         public bool ContainsOnlyUniqueCharacters(string text)
         {
-            bool result = true;
-            IDictionary<char, int> characterFrequencies = new Dictionary<char, int>();
+            bool[] arr = new bool[256];
 
             if (text == "")
             {
-                result = false;
+                return false;
             }
             else
             {
-                foreach(char character in text)
+                for (int i = 0; i < text.Length; i++)
                 {
-                    if (!characterFrequencies.ContainsKey(character))
+                    if (arr[text[i]])
                     {
-                        characterFrequencies.Add(character, 1);
+                        return false;
                     }
                     else
                     {
-                        result = false;
+                        arr[text[i]] = true;
                     }
                 }
             }
-            return result;
+            return true;
         }
 
         public string Reverse(string text)
@@ -173,7 +171,27 @@ namespace CrackingCodeProblems.Class_Solutions
             {
                 return textCompressed.ToString();
             }
+        }
 
+        public void RotateMatrix(ref char[,] matrix, int size)
+        {
+            char top;
+            int first, last, offset;
+
+            for (int i = 0; i < size / 2; ++i)
+            {
+                first = i;
+                last = (size - 1) - i;
+                for (int j = i; j < last; ++j)
+                {
+                    offset = j - first;
+                    top = matrix[first, j];
+                    matrix[first, j] = matrix[last - offset, first];
+                    matrix[last - offset, first] = matrix[last, last - offset];
+                    matrix[last, last - offset] = matrix[j, last];
+                    matrix[j, last] = top;
+                }
+            }
         }
     }
 }

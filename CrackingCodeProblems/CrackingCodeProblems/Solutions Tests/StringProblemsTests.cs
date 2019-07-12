@@ -179,5 +179,45 @@ namespace CrackingCodeProblems.Solution_Tests
             // Assert
             stringActual.Should().Be(expected);
         }
+
+        [Test]
+        public void StringProblems_RotateMatrix_RotatesMatrixCorrectly()
+        {
+            // Arrange
+            bool areEqual;
+            char[] matrixOneRowOne = new char[4];
+            char[] matrixOneRowTwo = new char[4];
+            char[] matrixOneRowThree = new char[4];
+            char[] matrixOneRowFour = new char[4];
+            char[] matrixTwoRowOne = {'m', 'i', 'e', 'a' };
+            char[] matrixTwoRowTwo = {'n', 'j', 'f', 'b' };
+            char[] matrixTwoRowThree = {'o', 'k', 'g', 'c'};
+            char[] matrixTwoRowFour = {'p', 'l', 'h', 'd' };
+            char[,] preRotation = 
+            {
+                {'a','b','c','d'}, {'e', 'f', 'g', 'h'},
+                {'i', 'j', 'k', 'l'}, {'m', 'n', 'o', 'p'}
+            };
+
+            // Act
+            text.RotateMatrix(ref preRotation, 4);
+            for (int i = 0; i < 4; i++)
+            {
+                matrixOneRowOne[i] = preRotation[0, i];
+                matrixOneRowTwo[i] = preRotation[1, i];
+                matrixOneRowThree[i] = preRotation[2, i];
+                matrixOneRowFour[i] = preRotation[3, i];
+            }
+
+            // Assert
+            areEqual = matrixOneRowOne.SequenceEqual(matrixTwoRowOne);
+            areEqual.Should().BeTrue();
+            areEqual = matrixOneRowTwo.SequenceEqual(matrixTwoRowTwo);
+            areEqual.Should().BeTrue();
+            areEqual = matrixOneRowThree.SequenceEqual(matrixTwoRowThree);
+            areEqual.Should().BeTrue();
+            areEqual = matrixOneRowFour.SequenceEqual(matrixTwoRowFour);
+            areEqual.Should().BeTrue();
+        }
     }
 }
