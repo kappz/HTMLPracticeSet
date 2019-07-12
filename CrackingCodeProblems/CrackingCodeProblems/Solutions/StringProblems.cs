@@ -222,5 +222,49 @@ namespace CrackingCodeProblems.Class_Solutions
                 }
             }
         }
+
+        public bool IsSubstring(string s1, string s2)
+        {
+            int index = 0;
+            Stack<char> s2Stack = new Stack<char>();
+
+            for (int i = s2.Length - 1; i >= 0; i--)
+            {
+                s2Stack.Push(s2[i]);
+            }
+
+            while (index < s1.Length && s1[index] != s2Stack.Peek())
+            {
+                ++index;
+            }
+
+            if (index == s1.Length)
+            {
+                return false;
+            }
+            else
+            {
+                while (s2Stack.Count > 0 && s2Stack.Peek() == s1[index])
+                {
+                    if (s2Stack.Peek() == s1[index])
+                    {
+                        s2Stack.Pop();
+                    }
+                    if (index < s1.Length - 1)
+                    {
+                        ++index;
+                    }
+                    else
+                    {
+                        index = 0;
+                    }
+                }
+                if (s2Stack.Count == 0)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
     }
 }

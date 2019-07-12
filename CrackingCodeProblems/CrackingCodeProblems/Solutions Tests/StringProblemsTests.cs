@@ -258,7 +258,26 @@ namespace CrackingCodeProblems.Solution_Tests
             areEqual.Should().BeTrue();
             areEqual = matrixOneRowFour.SequenceEqual(matrixTwoRowFour);
             areEqual.Should().BeTrue();
+        }
 
+        [Test]
+        public void StringProblems_IsSubstringRotation_ReturnsTrueIfS2IsASubstringOfS1()
+        {
+            // Act
+            boolActual = text.IsSubstring("erbottlewat", "waterbottle");
+
+            // Assert
+            boolActual.Should().BeTrue();
+        }
+
+        [Test]
+        public void StringProblems_IsSubstringRotation_ReturnsFalseIfS2IsNotASubstringOfS1()
+        {
+            // Act
+            boolActual = text.IsSubstring("erbottlewan", "waterbottle");
+
+            // Assert
+            boolActual.Should().BeFalse();
         }
     }
 }
