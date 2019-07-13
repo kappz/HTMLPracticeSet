@@ -58,5 +58,16 @@ namespace CrackingCodeProblems.Solutions
             ++counter;
             return;
         }
+
+        public void DeleteMiddleNode(Node middleNode)
+        {
+            Node walker = middleNode;
+
+            while (walker.next != null)
+            {
+                walker.data = walker.next.data;
+                walker = walker.next;
+            }
+        }
     }
 }
