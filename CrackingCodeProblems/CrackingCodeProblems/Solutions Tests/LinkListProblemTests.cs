@@ -96,11 +96,33 @@ namespace CrackingCodeProblems.Solutions_Tests
             numTwoHead.next = new Node(9);
             numTwoHead.next.next = new Node(2);
 
+            // Act
             sumHead = linkList.SumLinkLists(numOneHead, numTwoHead);
 
+            // Assert
             sumHead.data.Should().Be(2);
             sumHead.next.data.Should().Be(1);
             sumHead.next.next.data.Should().Be(9);
+        }
+
+        [Test]
+        public void LinkListProblems_ReturnBeginningNodeInCircularLinkList_ReturnsCorrectNode()
+        {
+            // Arrange
+            Node result;
+            Node head = new Node(13);
+            head.next = new Node(3);
+            head.next.next = new Node(11);
+            head.next.next.next = new Node(7);
+            head.next.next.next.next = new Node(8);
+            head.next.next.next.next.next = new Node(7);
+            head.next.next.next.next.next.next = head.next.next;
+
+            // Act
+            result = linkList.ReturnBeginningNodeInCircularLinkList(head);
+
+            // Assert
+            result.data.Should().Be(11);
         }
     }
 }

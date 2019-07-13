@@ -104,5 +104,17 @@ namespace CrackingCodeProblems.Solutions
             }
             return result;
         }
+
+        public Node ReturnBeginningNodeInCircularLinkList(Node head)
+        {
+            Dictionary<Node, int> nodeValues = new Dictionary<Node, int>();
+
+            while (!nodeValues.ContainsKey(head))
+            {
+                nodeValues.Add(head, head.data);
+                head = head.next;
+            }
+            return head;
+        }
     }
 }
