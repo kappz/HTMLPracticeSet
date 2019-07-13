@@ -116,5 +116,52 @@ namespace CrackingCodeProblems.Solutions
             }
             return head;
         }
+
+        public bool IsPalindrome(Node head)
+        {
+            int length = 0;
+            int counter = 0;
+            Node walker = head;
+            Stack<int> lhsLinkList = new Stack<int>();
+
+            while (walker != null)
+            {
+                ++length;
+                walker = walker.next;
+            }
+            walker = head;
+
+            while (walker != null)
+            {
+                if (counter < length / 2)
+                {
+                    ++counter;
+                    lhsLinkList.Push(walker.data);
+                    walker = walker.next;
+                }
+                else if (counter == length / 2 && length % 2 != 0)
+                {
+                    ++counter;
+                    walker = walker.next;
+                }
+                else
+                {
+                    if (walker.data == lhsLinkList.Peek())
+                    {
+                        lhsLinkList.Pop();
+                        walker = walker.next;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+            }
+            if (lhsLinkList.Count == 0)
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }

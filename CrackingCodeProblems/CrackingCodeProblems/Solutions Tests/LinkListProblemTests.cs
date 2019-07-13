@@ -124,5 +124,52 @@ namespace CrackingCodeProblems.Solutions_Tests
             // Assert
             result.data.Should().Be(11);
         }
+
+        [Test]
+        public void LinkListProblems_LinkListIsPalindrome_ReturnsTrueIfEvenLengthLinkListIsPalindrome()
+        {
+            // Arrange
+            Node head = new Node(1);
+            head.next = new Node(3);
+            head.next.next = new Node(1);
+            head.next.next.next = new Node(1);
+            head.next.next.next.next = new Node(3);
+            head.next.next.next.next.next = new Node(1);
+
+            // Assert
+            linkList.IsPalindrome(head).Should().BeTrue();
+        }
+
+        [Test]
+        public void LinkListProblems_LinkListIsPalindrome_ReturnsTrueIfOddLengthLinkListIsPalindrome()
+        {
+            // Arrange
+            Node head = new Node(1);
+            head.next = new Node(3);
+            head.next.next = new Node(1);
+            head.next.next.next = new Node(4);
+            head.next.next.next.next = new Node(1);
+            head.next.next.next.next.next = new Node(3);
+            head.next.next.next.next.next.next = new Node(1);
+
+            // Assert
+            linkList.IsPalindrome(head).Should().BeTrue();
+        }
+
+        [Test]
+        public void LinkListProblems_LinkListIsPalindrome_ReturnsFalseIfNotPalindrome()
+        {
+            // Arrange
+            Node head = new Node(1);
+            head.next = new Node(3);
+            head.next.next = new Node(1);
+            head.next.next.next = new Node(4);
+            head.next.next.next.next = new Node(1);
+            head.next.next.next.next.next = new Node(2);
+            head.next.next.next.next.next.next = new Node(1);
+
+            // Assert
+            linkList.IsPalindrome(head).Should().BeFalse();
+        }
     }
 }
