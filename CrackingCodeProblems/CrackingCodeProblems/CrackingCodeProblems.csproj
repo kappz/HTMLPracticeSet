@@ -53,8 +53,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataStructures\Node.cs" />
+    <Compile Include="DataStructures\Queue.cs" />
+    <Compile Include="DataStructures\Stack.cs" />
     <Compile Include="Solutions Tests\LinkListProblemTests.cs" />
+    <Compile Include="Solutions Tests\StackQueueProblemTests.cs" />
     <Compile Include="Solutions\LinkListProblems.cs" />
+    <Compile Include="Solutions\StackQueueProblems.cs" />
     <Compile Include="Solutions\StringProblems.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Solutions Tests\StringProblemTests.cs" />
