@@ -61,13 +61,48 @@ namespace CrackingCodeProblems.Solutions
 
         public void DeleteMiddleNode(Node middleNode)
         {
+            Node previous = middleNode;
             Node walker = middleNode;
-
             while (walker.next != null)
             {
+                previous = walker;
                 walker.data = walker.next.data;
                 walker = walker.next;
             }
+            previous.next = null;
+        }
+
+        public Node SumLinkLists(Node numOne, Node numTwo)
+        {
+            Node sumHead = new Node();
+            Node walker = sumHead;
+            int sum = 0;
+            sum += LinkListToDigit(numOne);
+            sum += LinkListToDigit(numTwo);
+
+            while (sum > 1)
+            {
+                walker.data = sum % 10;
+                sum /= 10;
+                walker.next = new Node();
+                walker = walker.next;
+            }
+            walker = null;
+            return sumHead;
+        }
+
+        private int LinkListToDigit(Node head)
+        {
+            int exponent = 0;
+            int result = 0;
+
+            while (head != null)
+            {
+                result += head.data * (int)Math.Pow(10, exponent);
+                ++exponent;
+                head = head.next;
+            }
+            return result;
         }
     }
 }
